@@ -1025,6 +1025,7 @@ public:
 	virtual uint32_t get_frame_delay() const = 0;
 
 	static RenderingDevice *get_singleton();
+
 	RenderingDevice();
 };
 
