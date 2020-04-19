@@ -104,7 +104,7 @@ private:
 	float zoom;
 
 	bool box_selecting;
-	bool box_selection_mode_additive;
+	bool box_selection_mode_aditive;
 	Point2 box_selecting_from;
 	Point2 box_selecting_to;
 	Rect2 box_selecting_rect;
