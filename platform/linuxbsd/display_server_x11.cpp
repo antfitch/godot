@@ -1471,11 +1471,8 @@ DisplayServer::WindowMode DisplayServerX11::window_get_mode(WindowID p_window) c
 
 		if (result == Success && data) {
 			long *state = (long *)data;
-			if (state[0] == WM_IconicState) {
-				XFree(data);
+			if (state[0] == WM_IconicState)
 				return WINDOW_MODE_MINIMIZED;
-			}
-			XFree(data);
 		}
 	}
 

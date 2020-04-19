@@ -477,9 +477,6 @@ void ResourceCache::clear() {
 
 	resources.clear();
 	memdelete(lock);
-#ifdef TOOLS_ENABLED
-	memdelete(path_cache_lock);
-#endif
 }
 
 void ResourceCache::reload_externals() {
