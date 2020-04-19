@@ -1675,7 +1675,7 @@ bool Main::start() {
 			return false;
 		}
 
-		if (script_res->can_instance()) {
+		if (script_res->can_instance() /*&& script_res->inherits_from("SceneTreeScripted")*/) {
 
 			StringName instance_type = script_res->get_instance_base_type();
 			Object *obj = ClassDB::instance(instance_type);
@@ -1683,7 +1683,7 @@ bool Main::start() {
 			if (!script_loop) {
 				if (obj)
 					memdelete(obj);
-				ERR_FAIL_V_MSG(false, vformat("Can't load the script \"%s\" as it doesn't inherit from SceneTree or MainLoop.", script));
+				ERR_FAIL_V_MSG(false, "Can't load script '" + script + "', it does not inherit from a MainLoop type.");
 			}
 
 			script_loop->set_init_script(script_res);
