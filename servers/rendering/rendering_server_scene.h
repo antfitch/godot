@@ -48,7 +48,6 @@ public:
 		MAX_INSTANCE_CULL = 65536,
 		MAX_LIGHTS_CULLED = 4096,
 		MAX_REFLECTION_PROBES_CULLED = 4096,
-		MAX_DECALS_CULLED = 4096,
 		MAX_GI_PROBES_CULLED = 4096,
 		MAX_ROOM_CULL = 32,
 		MAX_EXTERIOR_PORTALS = 128,
@@ -238,9 +237,6 @@ public:
 		bool can_cast_shadows;
 		bool material_is_animated;
 
-		List<Instance *> decals;
-		bool decal_dirty;
-
 		List<Instance *> reflection_probes;
 		bool reflection_dirty;
 
@@ -256,7 +252,6 @@ public:
 			can_cast_shadows = true;
 			material_is_animated = true;
 			gi_probes_dirty = true;
-			decal_dirty = true;
 		}
 	};
 
@@ -281,21 +276,6 @@ public:
 
 			reflection_dirty = true;
 			render_step = -1;
-		}
-	};
-
-	struct InstanceDecalData : public InstanceBaseData {
-
-		Instance *owner;
-		RID instance;
-
-		struct PairInfo {
-			List<Instance *>::Element *L; //reflection iterator in geometry
-			Instance *geometry;
-		};
-		List<PairInfo> geometries;
-
-		InstanceDecalData() {
 		}
 	};
 
@@ -396,9 +376,7 @@ public:
 	int light_cull_count;
 	int directional_light_count;
 	RID reflection_probe_instance_cull_result[MAX_REFLECTION_PROBES_CULLED];
-	RID decal_instance_cull_result[MAX_DECALS_CULLED];
 	int reflection_probe_cull_count;
-	int decal_cull_count;
 	RID gi_probe_instance_cull_result[MAX_GI_PROBES_CULLED];
 	int gi_probe_cull_count;
 

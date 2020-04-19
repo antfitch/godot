@@ -34,7 +34,6 @@
 #include "core/callable.h"
 #include "core/hashfuncs.h"
 #include "core/object.h"
-#include "core/os/copymem.h"
 #include "core/simple_type.h"
 
 class CallableCustomMethodPointerBase : public CallableCustom {

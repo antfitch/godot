@@ -139,7 +139,7 @@ struct InstanceData {
 	uint layer_mask;
 };
 
-layout(set = 0, binding = 4, std430) restrict readonly buffer Instances {
+layout(set = 0, binding = 4, std430) buffer Instances {
 	InstanceData data[];
 }
 instances;
@@ -164,7 +164,7 @@ struct LightData { //this structure needs to be as packed as possible
 	uint pad[2];
 };
 
-layout(set = 0, binding = 5, std430) restrict readonly buffer Lights {
+layout(set = 0, binding = 5, std430) buffer Lights {
 	LightData data[];
 }
 lights;
@@ -251,40 +251,14 @@ layout(set = 0, binding = 9) uniform texture3D gi_probe_textures[MAX_GI_PROBE_TE
 #define CLUSTER_POINTER_MASK ((1 << CLUSTER_COUNTER_SHIFT) - 1)
 #define CLUSTER_COUNTER_MASK 0xfff
 
-layout(set = 0, binding = 10) uniform texture2D decal_atlas;
-layout(set = 0, binding = 11) uniform texture2D decal_atlas_srgb;
+layout(set = 0, binding = 10) uniform utexture3D cluster_texture;
 
-struct DecalData {
-	mat4 xform; //to decal transform
-	vec3 inv_extents;
-	float albedo_mix;
-	vec4 albedo_rect;
-	vec4 normal_rect;
-	vec4 orm_rect;
-	vec4 emission_rect;
-	vec4 modulate;
-	float emission_energy;
-	uint mask;
-	float upper_fade;
-	float lower_fade;
-	mat3x4 normal_xform;
-	vec3 normal;
-	float normal_fade;
-};
-
-layout(set = 0, binding = 12, std430) restrict readonly buffer Decals {
-	DecalData data[];
-}
-decals;
-
-layout(set = 0, binding = 13) uniform utexture3D cluster_texture;
-
-layout(set = 0, binding = 14, std430) restrict readonly buffer ClusterData {
+layout(set = 0, binding = 11, std430) buffer ClusterData {
 	uint indices[];
 }
 cluster_data;
 
-layout(set = 0, binding = 15) uniform texture2D directional_shadow_atlas;
+layout(set = 0, binding = 12) uniform texture2D directional_shadow_atlas;
 
 // decal atlas
 
@@ -316,7 +290,7 @@ layout(set = 3, binding = 4) uniform texture2D ao_buffer;
 
 /* Set 4 Skeleton & Instancing (Multimesh) */
 
-layout(set = 4, binding = 0, std430) restrict readonly buffer Transforms {
+layout(set = 4, binding = 0, std430) buffer Transforms {
 	vec4 data[];
 }
 transforms;
