@@ -40,12 +40,11 @@
 # Tirrin <lensenjoe@gmail.com>, 2019.
 # Filip Van Raemdonck <arrawn@gmail.com>, 2019.
 # Julian <jdhoogvorst@gmail.com>, 2019, 2020.
-# anonymous <noreply@weblate.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine editor\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2020-04-15 14:29+0000\n"
+"PO-Revision-Date: 2020-03-16 09:43+0000\n"
 "Last-Translator: Stijn Hinlopen <f.a.hinlopen@gmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot/"
 "nl/>\n"
@@ -1467,7 +1466,7 @@ msgstr "Autoload '%s' bestaat al!"
 
 #: editor/editor_autoload_settings.cpp
 msgid "Rename Autoload"
-msgstr "Naam Autoload-script wijzigen"
+msgstr "Autoload Hernoemen"
 
 #: editor/editor_autoload_settings.cpp
 msgid "Toggle AutoLoad Globals"
@@ -1481,7 +1480,7 @@ msgstr "Autoload verplaatsen"
 msgid "Remove Autoload"
 msgstr "Autoload verwijderen"
 
-#: editor/editor_autoload_settings.cpp editor/editor_plugin_settings.cpp
+#: editor/editor_autoload_settings.cpp
 msgid "Enable"
 msgstr "Inschakelen"
 
@@ -1749,7 +1748,7 @@ msgstr "Nieuw"
 #: editor/editor_feature_profile.cpp editor/editor_node.cpp
 #: editor/project_manager.cpp
 msgid "Import"
-msgstr "Importeren"
+msgstr "Import"
 
 #: editor/editor_feature_profile.cpp editor/project_export.cpp
 msgid "Export"
@@ -2967,13 +2966,8 @@ msgid "Q&A"
 msgstr "Vragen en antwoorden"
 
 #: editor/editor_node.cpp
-#, fuzzy
-msgid "Report a Bug"
-msgstr "Opnieuw importeren"
-
-#: editor/editor_node.cpp
-msgid "Send Docs Feedback"
-msgstr ""
+msgid "Issue Tracker"
+msgstr "Issue Tracker"
 
 #: editor/editor_node.cpp editor/plugins/asset_library_editor_plugin.cpp
 msgid "Community"
@@ -3647,7 +3641,7 @@ msgstr ""
 
 #: editor/filesystem_dock.cpp
 msgid "Cannot move/rename resources root."
-msgstr "Kan de hoofdmap voor bronnen niet verplaatsen of van naam veranderen."
+msgstr "Kan de hoofdmap voor bronnen niet verplaatsen of hernoemen."
 
 #: editor/filesystem_dock.cpp
 msgid "Cannot move a folder into itself."
@@ -3687,7 +3681,7 @@ msgstr "Bestandsnaam wijzigen:"
 
 #: editor/filesystem_dock.cpp
 msgid "Renaming folder:"
-msgstr "Mapnaam wijzigen:"
+msgstr "Hernoemen folder:"
 
 #: editor/filesystem_dock.cpp
 msgid "Duplicating file:"
@@ -3768,7 +3762,7 @@ msgstr "Alles inklappen"
 #: editor/project_manager.cpp editor/rename_dialog.cpp
 #: editor/scene_tree_dock.cpp
 msgid "Rename"
-msgstr "Naam wijzigen"
+msgstr "Hernoemen"
 
 #: editor/filesystem_dock.cpp
 msgid "Previous Folder/File"
@@ -4030,8 +4024,7 @@ msgid "Reimport"
 msgstr "Opnieuw importeren"
 
 #: editor/import_dock.cpp
-#, fuzzy
-msgid "Save Scenes, Re-Import, and Restart"
+msgid "Save scenes, re-import and restart"
 msgstr "Opnieuw importeren en herstarten (alle scènes worden opgeslagen)"
 
 #: editor/import_dock.cpp
@@ -6004,8 +5997,9 @@ msgstr ""
 "Dit is de meest preciese (maar langzaamste) optie voor botsingsberekeningen."
 
 #: editor/plugins/mesh_instance_editor_plugin.cpp
+#, fuzzy
 msgid "Create Single Convex Collision Sibling"
-msgstr "Maak een enkel convex botsingselement als subelement"
+msgstr "Een enkele convexe botsingsonderelement aanmaken"
 
 #: editor/plugins/mesh_instance_editor_plugin.cpp
 msgid ""
@@ -6894,6 +6888,14 @@ msgid "Open Godot online documentation."
 msgstr "Open Godot online documentatie."
 
 #: editor/plugins/script_editor_plugin.cpp
+msgid "Request Docs"
+msgstr "Verzoek documentatie"
+
+#: editor/plugins/script_editor_plugin.cpp
+msgid "Help improve the Godot documentation by giving feedback."
+msgstr "Help de Godot-documentatie te verbeteren door feedback te geven."
+
+#: editor/plugins/script_editor_plugin.cpp
 msgid "Search the reference documentation."
 msgstr "Zoek in de referentie documentatie."
 
@@ -7328,11 +7330,6 @@ msgid "This operation requires a single selected node."
 msgstr "Deze bewerking vereist één geselecteerde knoop."
 
 #: editor/plugins/spatial_editor_plugin.cpp
-#, fuzzy
-msgid "Auto Orthogonal Enabled"
-msgstr "Orthogonaal"
-
-#: editor/plugins/spatial_editor_plugin.cpp
 msgid "Lock View Rotation"
 msgstr "Beeldrotatie vergrendelen"
 
@@ -7421,10 +7418,6 @@ msgid "Freelook Slow Modifier"
 msgstr "Vrijekijk Snelheid Modificator"
 
 #: editor/plugins/spatial_editor_plugin.cpp
-msgid "View Rotation Locked"
-msgstr "Beeldrotatie vergrendeld"
-
-#: editor/plugins/spatial_editor_plugin.cpp
 msgid ""
 "Note: The FPS value displayed is the editor's framerate.\n"
 "It cannot be used as a reliable indication of in-game performance."
@@ -7432,6 +7425,10 @@ msgstr ""
 "Opmerking: De weergegeven FPS waarde is de verversingssnelheid van de "
 "editor.\n"
 "Het is geen betrouwbare indicatie voor werkelijke spelprestaties."
+
+#: editor/plugins/spatial_editor_plugin.cpp
+msgid "View Rotation Locked"
+msgstr "Beeldrotatie vergrendeld"
 
 #: editor/plugins/spatial_editor_plugin.cpp
 msgid "XForm Dialog"
@@ -8172,7 +8169,7 @@ msgstr "Selecteer de vorige shape, subtegel of Tegel."
 
 #: editor/plugins/tile_set_editor_plugin.cpp
 msgid "Region"
-msgstr "Gebied"
+msgstr "Bereik"
 
 #: editor/plugins/tile_set_editor_plugin.cpp
 msgid "Collision"
@@ -8200,7 +8197,7 @@ msgstr "Z Index"
 
 #: editor/plugins/tile_set_editor_plugin.cpp
 msgid "Region Mode"
-msgstr "Gebiedmodus"
+msgstr "Bereikmodus"
 
 #: editor/plugins/tile_set_editor_plugin.cpp
 msgid "Collision Mode"
@@ -8252,7 +8249,7 @@ msgstr "Nieuwe veelhoek aanmaken."
 
 #: editor/plugins/tile_set_editor_plugin.cpp
 msgid "Keep polygon inside region Rect."
-msgstr "Houd de veelhoek binnen het rechthoekige gebied."
+msgstr "Hou de veelhoek binnen een rechthoekig bereik."
 
 #: editor/plugins/tile_set_editor_plugin.cpp
 msgid "Enable snap and show grid (configurable via the Inspector)."
@@ -9880,7 +9877,7 @@ msgid ""
 "The project folders' contents won't be modified."
 msgstr ""
 "%d projecten uit de lijst verwijderen?\n"
-"De inhoud van de projectmappen wordt niet gewijzigd."
+"De inhoud van de projectmappen wordt niet geraakt."
 
 #: editor/project_manager.cpp
 msgid ""
@@ -9888,7 +9885,7 @@ msgid ""
 "The project folder's contents won't be modified."
 msgstr ""
 "Project uit de lijst verwijderen?\n"
-"De inhoud van de projectmap wordt niet gewijzigd."
+"De inhoud van de projectmap wordt niet geraakt."
 
 #: editor/project_manager.cpp
 msgid ""
@@ -10341,7 +10338,7 @@ msgstr "Selecteer Method"
 
 #: editor/rename_dialog.cpp editor/scene_tree_dock.cpp
 msgid "Batch Rename"
-msgstr "Bulk hernoemen"
+msgstr "Hernoemen meerdere"
 
 #: editor/rename_dialog.cpp
 msgid "Prefix"
@@ -10650,7 +10647,7 @@ msgstr "Kan niet werken aan knopen waar de huidige scène van erft!"
 
 #: editor/scene_tree_dock.cpp
 msgid "Attach Script"
-msgstr "Script toevoegen"
+msgstr "Verbind Script"
 
 #: editor/scene_tree_dock.cpp
 msgid "Remove Node(s)"
@@ -10951,12 +10948,6 @@ msgstr "Laad bestaand script."
 #: editor/script_create_dialog.cpp
 msgid "Script file already exists."
 msgstr "Scriptbestand bestaat al."
-
-#: editor/script_create_dialog.cpp
-msgid ""
-"Note: Built-in scripts have some limitations and can't be edited using an "
-"external editor."
-msgstr ""
 
 #: editor/script_create_dialog.cpp
 msgid "Class Name:"
@@ -12742,10 +12733,6 @@ msgstr ""
 "maken, zodat het een grootte kan ontvangen. Anders, maak er een RenderTarget "
 "van en wijs zijn interne textuur toe aan een knoop om te tonen."
 
-#: scene/main/viewport.cpp
-msgid "Viewport size must be greater than 0 to render anything."
-msgstr ""
-
 #: scene/resources/visual_shader_nodes.cpp
 msgid "Invalid source for preview."
 msgstr "Ongeldige bron voor voorvertoning."
@@ -12773,15 +12760,6 @@ msgstr "Varyings kunnen alleen worden toegewezenin vertex functies."
 #: servers/visual/shader_language.cpp
 msgid "Constants cannot be modified."
 msgstr "Constanten kunnen niet worden aangepast."
-
-#~ msgid "Issue Tracker"
-#~ msgstr "Issue Tracker"
-
-#~ msgid "Request Docs"
-#~ msgstr "Verzoek documentatie"
-
-#~ msgid "Help improve the Godot documentation by giving feedback."
-#~ msgstr "Help de Godot-documentatie te verbeteren door feedback te geven."
 
 #~ msgid "Replaced %d occurrence(s)."
 #~ msgstr "%d voorgekomen waarde(s) vervangen."
