@@ -28,7 +28,7 @@
 			<argument index="0" name="force" type="Vector3">
 			</argument>
 			<description>
-				Adds a constant directional force (i.e. acceleration) without affecting rotation.
+				Adds a constant directional force without affecting rotation.
 				This is equivalent to [code]add_force(force, Vector3(0,0,0))[/code].
 			</description>
 		</method>
@@ -40,8 +40,7 @@
 			<argument index="1" name="position" type="Vector3">
 			</argument>
 			<description>
-				Adds a constant directional force (i.e. acceleration).
-				The position uses the rotation of the global coordinate system, but is centered at the object's origin.
+				Adds a constant force (i.e. acceleration).
 			</description>
 		</method>
 		<method name="add_torque">
