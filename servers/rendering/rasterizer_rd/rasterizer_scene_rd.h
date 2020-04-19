@@ -56,9 +56,7 @@ protected:
 		float direction[3];
 		float energy;
 		float color[3];
-		float size;
 		uint32_t enabled;
-		uint32_t pad[3];
 	};
 
 	struct SkySceneState {

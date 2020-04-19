@@ -101,8 +101,9 @@ layout(set = 2, binding = 2) uniform texture2D quarter_res;
 #endif
 
 struct DirectionalLightData {
-	vec4 direction_energy;
-	vec4 color_size;
+	vec3 direction;
+	float energy;
+	vec3 color;
 	bool enabled;
 };
 
