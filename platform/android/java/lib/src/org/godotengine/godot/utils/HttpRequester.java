@@ -28,7 +28,7 @@
 /* SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.                */
 /*************************************************************************/
 
-package org.godotengine.godot.plugin.payment.utils;
+package org.godotengine.godot.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -61,7 +61,6 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.params.HttpProtocolParams;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
-import org.godotengine.godot.utils.Crypt;
 
 /**
  *
